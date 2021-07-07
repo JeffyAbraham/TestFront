@@ -10,7 +10,7 @@ import {
 } from './menu-item.styles';
 
 const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
-  <MenuItemContainer
+  <MenuItemContainer data-testid='menu-container'
     size={size}
     onClick={() => history.push(`${match.url}${linkUrl}`)}
   >
@@ -18,8 +18,8 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
       className='background-image'
       imageUrl={imageUrl}
     />
-    <ContentContainer className='content'>
-      <ContentTitle>{title.toUpperCase()}</ContentTitle>
+    <ContentContainer  className='content'>
+      <ContentTitle data-testid='menu-container-content'>{title.toUpperCase()}</ContentTitle>
       <ContentSubtitle>SHOP NOW</ContentSubtitle>
     </ContentContainer>
   </MenuItemContainer>
