@@ -1,6 +1,8 @@
 /// <reference types="cypress" />
 
-import { Children } from "react";
+Cypress.on('uncaught:exception', (err, runnable) => {
+  return false;
+});
 
 describe("The Navigation bar", () => {
   beforeEach(() => {

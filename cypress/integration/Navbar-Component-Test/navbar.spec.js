@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
-
+Cypress.on('uncaught:exception', (err, runnable) => {
+  return false;
+});
 describe("The Navigation bar", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000");
