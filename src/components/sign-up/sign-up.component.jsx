@@ -40,7 +40,7 @@ const SignUp = ({ signUpStart }) => {
       <SignUpTitle>I do not have a account</SignUpTitle>
       <span>Sign up with your email and password</span>
       <form className='sign-up-form' onSubmit={handleSubmit}>
-        <FormInput
+        <FormInput data-testid='display-signup'
           type='text'
           name='displayName'
           value={displayName}
@@ -49,6 +49,7 @@ const SignUp = ({ signUpStart }) => {
           required
         />
         <FormInput
+          data-testid='email-signup'
           type='email'
           name='email'
           value={email}
@@ -57,6 +58,7 @@ const SignUp = ({ signUpStart }) => {
           required
         />
         <FormInput
+          data-testid='password-signup'
           type='password'
           name='password'
           value={password}
@@ -65,6 +67,7 @@ const SignUp = ({ signUpStart }) => {
           required
         />
         <FormInput
+           data-testid='password-confirm-signup'
           type='password'
           name='confirmPassword'
           value={confirmPassword}
@@ -72,7 +75,7 @@ const SignUp = ({ signUpStart }) => {
           label='Confirm Password'
           required
         />
-        <CustomButton type='submit'>SIGN UP</CustomButton>
+        <CustomButton data-testid='button-signup' type='submit'>SIGN UP</CustomButton>
       </form>
     </SignUpContainer>
   );

@@ -9,10 +9,7 @@ export const CollectionItemContainer = styled.div`
   align-items: center;
   position: relative;
 
-  &:hover {
-    .image {
-      opacity: 0.8;
-    }
+ 
 
     button {
       opacity: 0.85;

@@ -18,9 +18,9 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
       className='background-image'
       imageUrl={imageUrl}
     />
-    <ContentContainer  className='content'>
+    <ContentContainer  className='content' data-testid='menu-content'>
       <ContentTitle data-testid='menu-container-content'>{title.toUpperCase()}</ContentTitle>
-      <ContentSubtitle>SHOP NOW</ContentSubtitle>
+      <ContentSubtitle >SHOP NOW</ContentSubtitle>
     </ContentContainer>
   </MenuItemContainer>
 );

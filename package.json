@@ -5,6 +5,7 @@
   "proxy": "http://localhost:5000",
   "dependencies": {
     "axios": "^0.21.1",
+    "faker": "^5.5.3",
     "firebase": "^8.7.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",

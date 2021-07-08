@@ -28,6 +28,7 @@ export function* getSnapshotFromUserAuth(userAuth, additionalData) {
     const userSnapshot = yield userRef.get();
     yield put(signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() }));
   } catch (error) {
+    alert('wrong username')
     yield put(signInFailure(error));
   }
 }

@@ -14,9 +14,9 @@ import {
 const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
-    <CollectionPageContainer>
+    <CollectionPageContainer data-testid='collection-page-container' >
       <CollectionTitle>{title}</CollectionTitle>
-      <CollectionItemsContainer>
+      <CollectionItemsContainer data-testid='collection-page-container-items' >
         {items.map(item => (
           <CollectionItem key={item.id} item={item} />
         ))}
